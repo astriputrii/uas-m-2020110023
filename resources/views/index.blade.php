@@ -74,7 +74,6 @@
                                     <td>{{ $transaction->kategori }}</td>
                                     <td>{{ $transaction->nominal }}</td>
                                     <td>{{ $transaction->tujuan }}</td>
-                                    <td>{{ $transaction->id_account }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
