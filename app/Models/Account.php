@@ -17,6 +17,6 @@ class Account extends Model
 
     public function account()
     {
-        return $this->hasMany(Account::class, 'ID_Account');
+        return $this->hasMany(Account::class, 'account_id');
     }
 }

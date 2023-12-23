@@ -14,6 +14,6 @@ class Transaction extends Model
     ];
     public function transaction()
     {
-        return $this->hasMany(Transaction::class, 'Transaction');
+        return $this->hasMany(Transaction::class, 'transaction');
     }
 }
