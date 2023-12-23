@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\AppController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +18,28 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/', [AppController::class. 'index'])->name('index');
+
+Route::get('/master', function(){
+    return view('layouts.master');
+});
+
+Route::get('/accounts', function(){
+    return view('accounts.create');
+});
+
+Route::get('/data/{id}/edit', 'DataController@edit');
+
+Route::get('/transaction', function(){
+    return view('transaction.create');
+});
+
+Route::resource('accounts', AccountController::class);
+
+Route::resource('transaction', TransactionController::class);
+
+Route::fallback(function (){
+    return "Wah Kamu Nyasar, Turn Back!";
 });

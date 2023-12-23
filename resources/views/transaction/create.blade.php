@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-    <h2>Registrasi Akun Baru</h2>
-    <form method="POST" action="/account">
+    <h2>Registrasi Account</h2>
+    <form method="POST" action="/transaction">
         @csrf
         <div>
             <label for="name">Nama</label>
