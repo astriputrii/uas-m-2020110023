@@ -85,10 +85,10 @@
 
     <div class="row mt-4">
         <div class="col-md-6">
-            <a href="{{ route('transactions.index') }}" class="btn btn-primary">Ke Master Transaction</a>
+            <a href="{{ route('transactions.index') }}" class="btn btn-primary">Kembali ke Master Transaction</a>
         </div>
         <div class="col-md-6">
-            <a href="{{ route('accounts.index') }}" class="btn btn-primary">Ke Master Account</a>
+            <a href="{{ route('accounts.index') }}" class="btn btn-primary">Kembali ke Master Account</a>
         </div>
     </div>
 @endsection
