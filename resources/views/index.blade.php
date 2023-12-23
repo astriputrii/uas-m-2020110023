@@ -8,25 +8,15 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title">Jumlah Data Akun</h5>
-                    <p class="card-text h2">{{ $jumlahAccount }}</p>
+                    <p class="card-text h2">{{ $jumlahDataAccount }}</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Jumlah Data Transaksi</h5>
-                    <p class="card-text h2">{{ $jumlahTransaksi }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="card-title">Daftar Akun</h5>
+                    <h5 class="card-title">Accounts List</h5>
                 </div>
                 <div class="card-body">
                     <table class="table">
@@ -51,12 +41,21 @@
             </div>
         </div>
     </div>
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Jumlah Data Transaksi</h5>
+                <p class="card-text h2">{{ $jumlahDataTransaksi }}</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="row mt-4">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="card-title">Daftar Transaksi</h5>
+                    <h5 class="card-title">Transaction List</h5>
                 </div>
                 <div class="card-body">
                     <table class="table">

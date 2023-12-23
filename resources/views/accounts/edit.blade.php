@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <h2>Edit Data</h2>
+    <h2>Edit Account</h2>
     <form method="POST" action="/data/{{ $data->id }}">
         @csrf
         @method('PUT')
