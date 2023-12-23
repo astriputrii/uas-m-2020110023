@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('account', function (Blueprint $table) {
-            $table->id();
+            $table->char('id', 16)->primary();
+            $table->string('jenis_akun');
+            $table->string('id_transaksi');
+            $table->string('kategori');
+            $table->text('tujuan_transaksi');
             $table->timestamps();
         });
     }

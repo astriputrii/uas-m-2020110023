@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
-    <h2>Registrasi Akun Baru</h2>
+    <h2>Registrasi Account</h2>
     <form method="POST" action="/account">
         @csrf
         <div>
             <label for="name">Nama</label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="nama" id="nama" required>
         </div>
         <div>
             <label for="email">Email</label>

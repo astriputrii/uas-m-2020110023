@@ -41,5 +41,5 @@ Route::resource('accounts', AccountController::class);
 Route::resource('transaction', TransactionController::class);
 
 Route::fallback(function (){
-    return "Wah Kamu Nyasar, Turn Back!";
+    return "Kamu nyasar nih, Turn Back!";
 });

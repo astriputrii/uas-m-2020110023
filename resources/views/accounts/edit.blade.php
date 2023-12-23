@@ -6,7 +6,7 @@
         @method('PUT')
         <div>
             <label for="name">Nama</label>
-            <input type="text" name="name" id="name" value="{{ $data->name }}" required>
+            <input type="text" name="nama" id="nama" value="{{ $data->name }}" required>
         </div>
         <div>
             <label for="email">Email</label>

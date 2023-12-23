@@ -9,8 +9,8 @@
             <h1>Application Transaction</h1>
             <nav>
                 <ul>
-                    <li><a href="/account">List Account</a></li>
-                    <li><a href="/transaction">List Transaction</a></li>
+                    <li><a href="/account">Account List</a></li>
+                    <li><a href="/transaction">Transaction List</a></li>
                 </ul>
             </nav>
         </div>
